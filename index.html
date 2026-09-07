@@ -32,6 +32,7 @@
   .insight-media-up-03,.insight-media-up-04{object-position:center 35%;}
   .insight-copy-cell{padding:20px 20px 22px;background-color:#FFFFFF;border-radius:0 0 18px 18px;}
   .cost-icon{display:block;width:100%;max-width:120px;height:64px;object-fit:contain;border-radius:14px;margin:0 auto 10px;}
+  .cost-sources-composite{width:104% !important;max-width:none !important;margin-left:-2% !important;}
   .qtr-title{min-height:32px;}
   .ind-card:hover{border-color:#AACC03 !important;}
   .cta-link:hover,.ind-card:hover .ind-explore{background-color:#ABCD03 !important;border-color:#ABCD03 !important;box-shadow:0 0 0 1px #ABCD03,0 0 22px rgba(170,205,0,.58),0 11px 22px rgba(210,218,226,.72) !important;transform:translateY(-1px);}
@@ -55,6 +56,7 @@
     .qtr{width:50% !important;display:inline-block !important;box-sizing:border-box !important;vertical-align:top !important;padding:6px !important;}
     .qtr-inner{padding:13px 10px 11px !important;}
     .qtr img{width:100% !important;max-width:120px !important;height:64px !important;object-fit:contain !important;display:block !important;border-radius:14px !important;margin:0 auto 10px !important;}
+    .cost-sources-composite{width:100% !important;max-width:600px !important;margin-left:0 !important;}
     .cta-copy-cell,.cta-button-cell{display:block !important;width:100% !important;box-sizing:border-box !important;text-align:left !important;}
     .cta-button-cell{padding:8px 22px 22px !important;text-align:left !important;}
     .cta-link{display:block !important;width:100% !important;box-sizing:border-box !important;text-align:center !important;}
@@ -170,37 +172,15 @@
               <p style="display:inline-block;margin:0 0 13px 0;padding:7px 10px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:15px;font-weight:800;color:#102A4D;letter-spacing:0;text-transform:uppercase;background-color:#ABCD03;border:1px solid #ABCD03;border-radius:999px;">HIDDEN COSTS</p>
             </td>
           </tr>
-          <!-- 4 cost sources: rounded cards with an upper illustration layer -->
+          <!-- 4 cost sources: user-provided composite image -->
           <tr>
-            <td>
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td width="25%" class="qtr" valign="top" style="background-color:#DDE8ED;border:1px solid #C9D9E2;border-radius:18px;padding:14px 10px 12px;box-shadow:0 8px 16px rgba(16,42,77,.07);">
-                    <img class="cost-icon" src="https://aka.doubaocdn.com/s/7nSFKo9q1j" width="120" height="64" alt="Fuel and idling" style="display:block;width:100%;max-width:120px;height:64px;object-fit:contain;border-radius:14px;margin:0 auto 10px;" />
-                    <p class="qtr-title" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#102A4D;text-align:center;">Fuel &amp; Idling</p>
-                  </td>
-                  <td width="8" class="hide-m" style="font-size:0;line-height:0;">&nbsp;</td>
-                  <td width="25%" class="qtr" valign="top" style="background-color:#DDE8ED;border:1px solid #C9D9E2;border-radius:18px;padding:14px 10px 12px;box-shadow:0 8px 16px rgba(16,42,77,.07);">
-                    <img class="cost-icon" src="https://aka.doubaocdn.com/s/7lLifY6jkS" width="120" height="64" alt="Maintenance" style="display:block;width:100%;max-width:120px;height:64px;object-fit:contain;border-radius:14px;margin:0 auto 10px;" />
-                    <p class="qtr-title" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#102A4D;text-align:center;">Maintenance</p>
-                  </td>
-                  <td width="8" class="hide-m" style="font-size:0;line-height:0;">&nbsp;</td>
-                  <td width="25%" class="qtr" valign="top" style="background-color:#DDE8ED;border:1px solid #C9D9E2;border-radius:18px;padding:14px 10px 12px;box-shadow:0 8px 16px rgba(16,42,77,.07);">
-                    <img class="cost-icon" src="https://aka.doubaocdn.com/s/cEIkkXDQrE" width="120" height="64" alt="Asset utilization" style="display:block;width:100%;max-width:120px;height:64px;object-fit:contain;border-radius:14px;margin:0 auto 10px;" />
-                    <p class="qtr-title" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#102A4D;text-align:center;">Asset Utilization</p>
-                  </td>
-                  <td width="8" class="hide-m" style="font-size:0;line-height:0;">&nbsp;</td>
-                  <td width="25%" class="qtr" valign="top" style="background-color:#DDE8ED;border:1px solid #C9D9E2;border-radius:18px;padding:14px 10px 12px;box-shadow:0 8px 16px rgba(16,42,77,.07);">
-                    <img class="cost-icon" src="https://aka.doubaocdn.com/s/YQMwNLlDbD" width="120" height="64" alt="Driver behavior" style="display:block;width:100%;max-width:120px;height:64px;object-fit:contain;border-radius:14px;margin:0 auto 10px;" />
-                    <p class="qtr-title" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#102A4D;text-align:center;">Driver Behavior</p>
-                  </td>
-                </tr>
-              </table>
+            <td style="padding:0;">
+              <img class="cost-sources-composite" src="assets/cost-sources-composite.jpg" width="1200" alt="Fuel and idling, maintenance, asset utilization, and driver behavior" style="display:block;width:104%;max-width:none;height:auto;margin-left:-2%;border:0;border-radius:18px;" />
             </td>
           </tr>
           <!-- closing copy -->
           <tr>
-            <td style="padding-top:30px;">
+            <td style="padding-top:15px;">
               <p class="justify-copy" style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:26px;color:#334456;">From vehicle utilization and fuel consumption to maintenance and driver behavior, better data can help fleet operators identify inefficiencies, prioritize opportunities, and make better use of the resources they already have.</p>
               <p class="justify-copy" style="margin:0 0 30px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:26px;color:#334456;">Want to turn fleet data into savings? This article shows how smart telematics cuts fuel waste, unplanned maintenance, and insurance costs while boosting asset utilization &mdash; with real ROI data, industry benchmarks, and integrated solutions. It also highlights the optimization potential and financial impact of deploying such a system across commercial fleets.</p>
             </td>
